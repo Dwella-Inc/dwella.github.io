@@ -1,0 +1,291 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+ /* Switch over to simple grid once this becomes a lot less dependent on Materialize
+ https://simplegrid.io */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+body {
+  font-family: Nunito;
+  color: #11223F;
+}
+
+h1, h2{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h5 {
+
+}
+
+/* FIX on mobileat less than 735px width? */
+section {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+}
+
+
+/* START OF Navigation / navbar */
+
+nav {
+  background-color: #F2FAFB;
+  width: 100%;  /* i'm assuming full width */
+  /* height: 60px;  change it to desired height*/
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+}
+
+
+/* Logo to hide on mobile?*/
+/* https://stackoverflow.com/questions/30624709/css-html-navigation-and-logo-on-same-line */
+/* vertical-align: middle; https://stackoverflow.com/questions/15367561/centering-a-nav-bar-vertically */
+.logo {
+  width: 137px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* FIX Really need to fix the responsive view for below tablets */
+/* @media only screen and (max-width: 772px) {
+  nav.logo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+} */
+
+
+nav ul a, footer ul a {
+  background-color: rgba(0, 0, 0, 0);
+  color: #546e7a;
+  font-weight: 400;
+  /* adjust vertical-align: middle; */
+}
+
+/* add slower transition time and left-to-right underline */
+nav ul a:hover,  footer ul a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #00C4B5;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+/* set later if it's under these pages */
+nav ul a:active {
+  background-color: rgba(0, 0, 0, 0);
+  color: #00C4B5;
+}
+
+/* Menu button colour */
+i.menu-icon {
+  color: #00C4B5;
+}
+
+
+
+/* END OF Navigation / Navbar */
+
+
+
+/* START OF Button Design */
+/* https://codepen.io/JavaScriptJunkie/pen/pPRooV */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* .buttons {
+    margin: 10%;
+    text-align: center;
+} */
+
+.buttons {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    /* margin: 20px; */
+    height: 40px;
+    width: 170px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.buttons:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.buttons:focus {
+    outline: none;
+}
+
+/* adjust colours and make left to right */
+.buttons.primary {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    color: #ffffff;
+}
+
+.buttons.primary:hover {
+  box-shadow: 0 2px 10px 0 #00C4B5;
+}
+
+
+.buttons.secondary {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.buttons.secondary:hover {
+  box-shadow: 0 2px 10px 0;
+}
+
+/* END OF Button Design */
+
+
+
+/* Section 1 */
+/* backgrounds per section https://codepen.io/sara-kat/pen/gKrVpg */
+/* https://www.w3schools.com/cssref/pr_background-position.asp */
+.section1 {
+  height: 90vh;
+  width: 100%;
+  background-image:url("backgrounds/bg1.png");
+
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* .parallax-container {
+  width: 100%;
+  z-index: -999;
+    height: 85vh;
+} */
+
+h1 {
+  font-size: 10vh;
+}
+
+
+
+/* Section 2 */
+
+.section2 {
+  padding-top: 10vh;
+}
+
+
+/* Section 3 */
+
+.section3 {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  background-image: linear-gradient(#ffffff, #F2FAFB);
+}
+
+
+.infocard {
+  height: 30vw;
+  padding: 20px;
+    /* -webkit-box-shadow: none !important;
+            box-shadow: none !important; */
+}
+
+.card0 {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+.card1 {
+  background-color: #f3e5f5;
+}
+.card2 {
+  background-color: #efebe9;
+}
+.card3 {
+  background-color: #F2FAFB;
+}
+.card4 {
+  background-color: #fffde7;
+}
+.card5 {
+  background-color: #fff3e0;
+}
+
+
+
+
+
+
+
+
+.thefooter {
+  background-color: #F2FAFB;
+  color: #11223F;
+}
+
+/* Small note in the bottom */
+.thebottomfeeter {
+  color: #11223F;
+  overflow: hidden;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0px;
+}
+
+
+/* erase */
+
+
+.intro {
+  height: 90vh;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}

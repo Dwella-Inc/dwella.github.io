@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Dwella</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <!-- Note that the folder 'assets' is just for this demo, not the commercial facing site -->
+
+</head>
+<body>
+
+
+<!-- Navbar -->
+  <div class="navbar-fixed">
+    <nav role="navigation">
+      <div class="nav-wrapper container">
+
+        <!-- This line is for mobile -->
+        <a href="#" data-activates="mobile-demo" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons menu-icon">menu</i></a>
+        <!-- Link to the mobile HTML+JS fix!!! https://github.com/Dogfalo/materialize/issues/3844 -->
+
+        <a href="index.html"><img class="logo" src="icons/logo.png"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">For Builders</a></li>
+          <li><a href="demo/dashboard.html">Demo</a></li>
+          <li><a href="https://forms.gle/gziWHaZNF4FJ2r9t9" target="_blank">Survey</a></li>
+          <!-- To enable the secondary Login button <li><a href="#"><button class="buttons secondary">Login</button></a></li> -->
+          <!-- Remember this format for modal triggers, it's a pretty specific order to work with the styling -->
+          <li><a class="modal-trigger" href="#registermodal"><button class="buttons primary">Register</button></a></li>
+        </ul>
+
+
+      </div>
+    </nav>
+  </div>
+
+  <!--FIX navbar on mobile -->
+  <ul id="nav-mobile" class="sidenav">
+    <li><a href="index.html"><img class="logo" src="icons/logo.png"></a></li>
+    <li><a href="#">How It Works</a></li>
+    <li><a href="#">For Builders</a></li>
+    <li><a href="demo/dashboard.html">Demo</a></li>
+    <li><a href="https://forms.gle/gziWHaZNF4FJ2r9t9" target="_blank">Fill Our Survey</a></li>
+    <!-- To enable the secondary Login button <li><a href="#"><button class="buttons secondary">Login</button></a></li> -->
+    <li><a class="buttons primary modal-trigger" href="#registermodal">Register</a></li>
+  </ul>
+
+
+
+
+<!-- Section 1 - Main  -->
+  <section class="section1">
+    <!-- adjust the parallax so that it is beneath the input fields and texts. Even with z-index, it's covered -->
+    <!-- <div class="parallax"><img src="images/bg1.png"></div> -->
+      <span class="hide-on-small-only"><br></span>
+      <h1 class="center">
+        <span class="hide-on-small-only"><br></span>Your Share
+        <span class="hide-on-small-only"><br></span>of Your City</h1>
+      <div class="row center">
+        <h5 class="col s12">Dwella is a fast, simple, and affordable way to invest in real estate.
+          <span class="hide-on-med-and-down"><br><br></span>Join our waitlist now to find out how.</h5>
+      </div>
+
+      <div class="row center">
+        <form class="col s12" method="post" action="">
+          <!-- <div class="row center">
+            <div class="col s12"> -->
+              <div class="input-field inline">
+                <input id="email_inline" type="email" class="validate">
+                <label for="email_inline">Email</label>
+                <span class="helper-text" data-error="Please include a valid email" data-success=""></span>
+                <div>
+                  <a href="index.html"><button class="buttons primary">Register</button></a>
+                </div>
+              </div>
+            <!-- </div>
+          </div> -->
+        </form>
+      </div>
+
+      <!-- <div class="row center">
+       <form class="col s12 center" method="post" action="">
+         <div class="row">
+           <div class="input-field col m3 s6">
+             <i class="material-icons prefix">account_circle</i>
+             <input id="icon_prefix" type="text" class="validate">
+             <label for="icon_prefix">First Name</label>
+           </div>
+           <div class="input-field col m3 s6">
+             <i class="material-icons prefix">email</i>
+             <input id="icon_telephone" type="tel" class="validate">
+             <label for="icon_telephone">Telephone</label>
+           </div>
+         </div>
+       </form>
+     </div> -->
+
+
+  </section>
+
+
+  <!-- Section 2  -->
+  <section>
+    <div class="container section2">
+      <div class="row">
+        <div class="col m12 l5">
+          <h4><br><br>
+            A Smart, Simple Solution to Real Estate Investing</h4>
+          <ul>
+            <li><i class="material-icons left">check</i>User-friendly platform</li>
+          </ul>
+          <ul>
+            <li><i class="material-icons left">check</i>Responsive to desktop and mobile</a></li>
+          </ul>
+          <ul>
+            <li><i class="material-icons left">check</i>Can start investing with whatever you have</li>
+          </ul>
+          <ul>
+            <li><i class="material-icons left">check</i>Open to any and all projects we have available</a></li>
+          </ul>
+          <ul>
+            <li><i class="material-icons left">check</i>Our tokens are tradeable on secondary markets</li>
+          </ul>
+        </div>
+
+        <div class="col l7 hide-on-med-and-down">
+          <img class="responsive-img" src="images/workplace.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section 3  -->
+  <!-- Really need to fix the responsive design for this area, plus it feels bland as just text -->
+  <section class="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col m12 l6">
+          <div class="card0">
+            <h3>Build Wealth With Us<br></h3>
+            <p>Let us do the heavy-lifting so that you can focus on what's most important to you.</p>
+          </div>
+
+          <div class="card infocard card1 valign-wrapper">
+            <div class="card-content">
+              <h4>Powered on the Blockchain</h4>
+              <p class=" hide-on-med-and-down">We leverage blockchain technology to offer fractional ownership in real estate, while ensuring safe yet swift transactions. </p>
+            </div>
+          </div>
+
+          <div class="card infocard card2 valign-wrapper">
+            <div class="card-content">
+              <h4>No "off-times"</h4>
+              <p class=" hide-on-med-and-down">We are able to provide live updates on all of your assets, even allowing you to make sales and purchases 24/7.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col m12 l6">
+          <div class="card infocard card3 valign-wrapper">
+            <div class="card-content">
+              <h4>Proven Market, New Approach</h4>
+              <p class=" hide-on-med-and-down">Everyone can recognize the reliable value of real estate investments, but also its high barrier to entry. We've brought down those walls so everyone can take part in the wealth.</p>
+            </div>
+          </div>
+
+          <div class="card infocard card4 valign-wrapper">
+            <div class="card-content">
+              <h4>Liquidity</h4>
+              <p class="hide-on-med-and-down">Unlike other blockchain platforms, the utilty of our tokens is not limited to our ecosystem.</p>
+            </div>
+          </div>
+
+          <div class="card infocard card5 valign-wrapper">
+            <div class="card-content">
+              <h4>User-Centric</h4>
+              <p class=" hide-on-med-and-down">Our users are the heart and soul of what we do, therefore, we are constantly looking for ways to collect better feedback.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+    </section>
+
+
+  <!-- Use this area to make a statement -->
+  <!-- <section class="intro">
+    <div class="content">
+      <h1>You can create full screen sections without javascript.</h1>
+      <p>The height is set to 90vh, that means 90% height.</p>
+   </div>
+  </section> -->
+
+
+
+
+  <!-- The Register Modal -->
+    <div id="registermodal" class="modal">
+        <form class="col s12 center">
+          <!-- <div class="row center">
+            <div class="col s12"> -->
+              <h4><br>Join the Dwella community!</h4>
+              <div class="input-field inline">
+                <div class="row center">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                    <span class="helper-text" data-error="Please include a valid email" data-success=""></span>
+                  </div>
+                </div>
+                <div>
+                  <a href="index.html"><button class="buttons primary">Register</button></a>
+                </div>
+              </div>
+            <!-- </div>
+          </div> -->
+        </form>
+      </div>
+    </div>
+
+
+
+<!-- Must take out the page-footer portion and grid dependencies -->
+  <footer class="page-footer thefooter">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>Company Bio</h5>
+          <p>
+            We are a team of young professionals who have first-hand experience with the difficulties and barriers of investing in real estate.
+            We created this platform with the aim of making real estate investing accessible to all.
+            Whether you're excited to learn more about the movement or want to take part in it, we can't wait to hear from you!</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5>Legals</h5>
+          <ul>
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">Terms and Conditions</a></li>
+            <!-- <li><a href="#!">Link 3</a></li>
+            <li><a href="#!">Link 4</a></li> -->
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="#!">Careers</a></li>
+            <li><a href="#!">LinkedIn</a></li>
+            <li><a href="#!">Instagram</a></li>
+            <li><a href="#!">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Small note in the bottom Can lead to About Page or Teams Feature -->
+    <div class="thebottomfeeter">
+      <div class="container center">
+      Copyright © 2020 by Dwella Inc. All rights reserved.
+      <!-- Made by <a href="#">The Basement Boys</a> -->
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
